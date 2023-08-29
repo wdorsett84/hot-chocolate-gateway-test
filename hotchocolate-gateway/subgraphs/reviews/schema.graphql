@@ -1,0 +1,22 @@
+schema {
+  query: Query
+}
+
+type Author {
+  id: Int!
+  name: String!
+  reviews: [Review!]!
+}
+
+type Query {
+  authors: [Author!]
+}
+
+type Review {
+  id: Int!
+  body: String!
+  stars: Int!
+  productId: Int!
+  authorId: Int!
+  author: Author!
+}

@@ -1,0 +1,6 @@
+extend schema 
+    @rename(coordinate: "Author", newName: "User")
+    @rename(coordinate: "Query.authors", newName: "users")
+{
+
+}
